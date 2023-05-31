@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Inter";
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+}
+
+.wrapper {
+	height: 100%;
+	display: grid;
+	grid-template-columns: 100px auto;
+}
+
+.aside {}
+
+.aside__container {
+	height: 100vh;
+	position: fixed;
+	z-index: 2;
+	background-color: #A27CE9;
+	padding: 35px 0px;
+	width: 100px;
+	transition: all 0.3s ease 0s;
+}
+
+.menu-open .aside__container {
+	width: 310px;
+}
+
+.aside__body {
+	width: 100px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.aside__button {
+	height: 32px;
+	width: 46px;
+	position: relative;
+	cursor: pointer;
+}
+
+.aside__button span {
+	display: block;
+	height: 3px;
+	width: 100%;
+	background-color: #000;
+	transition: transform 0.1s ease 0s;
+}
+
+.menu-open .aside__button span {
+	transform: scale(0);
+}
+
+.aside__button::after,
+.aside__button::before {
+	content: "";
+	display: block;
+	height: 3px;
+	width: 100%;
+	background-color: #000;
+	position: absolute;
+	left: 0;
+	transition: all 0.3s ease 0s;
+}
+
+.menu-open .aside__button::after {
+	transform: rotate(45deg);
+	top: calc(50% - 3px);
+}
+
+.menu-open .aside__button::before {
+	transform: rotate(-45deg);
+	bottom: calc(50%);
+}
+
+.aside__button::after {
+	top: 0;
+}
+
+.aside__button::before {
+	bottom: 0;
+}
+
+.aside__menu {
+	display: grid;
+	gap: 50px;
+}
+
+.menu {}
+
+.menu__link {
+	display: block;
+	position: relative;
+}
+
+.menu__link span {
+	
+}
+
+.menu__link:hover span {
+	transition: all 0.3s ease 0s;
+	color: rgb(255, 183, 183);
+}
+
+.menu__link span {
+	white-space: nowrap;
+	position: absolute;
+	left: calc(100% + 15px);
+	top: 50%;
+	transform: translate(0px, -50%);
+	display: inline-block;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 17px;
+	color: #fff;
+	opacity: 0;
+	transition: opacity 0.3s ease 0s;
+}
+
+.menu-open .menu__link span {
+	opacity: 1;
+}
+
+.menu__input {
+	display: block;
+	opacity: 0;
+	pointer-events: none;
+	position: absolute;
+	left: calc(100% + 15px);
+	top: 50%;
+	transform: translate(0px, -50%);
+	background-color: #F0E9FB;
+	border: 0.5px solid #454545;
+	border-radius: 15px;
+	font-size: 14px;
+	line-height: 17px;
+	color: #454545;
+	padding: 6.5px 15px;
+	width: 0px;
+	transition: all 0.3s ease 0s;
+}
+
+.menu__input:focus {
+	outline: none;
+}
+
+.menu-open .menu__input {
+	pointer-events: all;
+	opacity: 1;
+	width: 192px;
+}
+
+.aside__logo {
+	position: relative;
+}
+
+.aside__logo span {
+	position: absolute;
+	left: calc(100% + 10px);
+	top: 50%;
+	transform: translate(0px, -50%);
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	color: #D3FFF7;
+	opacity: 0;
+	transition: all 0.3s ease 0s;
+}
+
+.menu-open .aside__logo span {
+	opacity: 1;
+}
+
+.aside__logo img {
+	width: 60px;
+	height: 60px;
+}
+.profile {
+	width: 100%;
+}
+.create_post {
+	align-items: center;
+}
+main{
+	width: 100%;
+	background-image: url("../images/main/background.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 50px 0px;
+}
+h1{
+	text-align: center;
+	margin: auto;
+	margin-bottom: 50px;
+}
+.create_post_box{
+	display: flex;
+	justify-content: center;
+	gap: 120px;
+}
+.create_post_element{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+}
+input{
+	width: 100%;
+}
+button{
+	background-color: #A27CE9;
+	border: #A27CE9 solid;
+	border-radius: 20px;
+	width: 139px;
+}

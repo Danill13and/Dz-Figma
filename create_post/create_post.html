@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create post</title>
+	<link rel="stylesheet" href="create_post.css">
+	<script src="../script.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+		<aside class="aside">
+			<div class="aside__container">
+				<div class="aside__body">
+					<button class="aside__button"><span></span></button>
+					<nav class="aside__menu menu">
+						<a href="" class="menu__link">
+							<img src="../images/menu/search.png" alt="icon">
+							<input placeholder="Search..." class="menu__input" type="text" hidden>
+						</a>
+						<a href="../Profile/profile.html" class="menu__link">
+							<img src="../images/menu/user.png" alt="icon">
+							<span>Profile</span>
+						</a>
+						<a href="../Messages/messages.html" class="menu__link">
+							<img src="../images/menu/message.png" alt="icon">
+							<span>Messages</span>
+						</a>
+						<a href="../Stream/stream.html" class="menu__link">
+							<img src="../images/menu/stream.png" alt="icon">
+							<span>Live stream`s</span>
+						</a>
+					</nav>
+					<div class="aside__logo">
+						<img src="../images/loginAndRegistration/logo.png" alt="logo">
+						<a href="../Main/main.html"><span>Funtime</span></a>
+					</div>
+				</div>
+			</div>
+		</aside>
+		<main class="create_post">
+            <h1>Add post</h1>
+            <div class="create_post_box">
+                <img src="../images/create_post/post.png" alt="photo">
+                <div class="create_post_element">
+                    <input type="text" placeholder="Title" class="post__text">
+					<textarea cols="30" rows="10" placeholder="Description" class="post__text"></textarea>
+					<button>Add</button>
+                </div>
+            </div>
+		</main>
+	</div>
+</body>
+</html>
