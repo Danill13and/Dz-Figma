@@ -20,7 +20,7 @@
 .main {
 	display: flex;
 	justify-content: center;
-	padding: 40px 0px;
+	padding: 40px 10px;
 }
 
 .main__form {
@@ -28,6 +28,7 @@
 	border: 1px solid #5A5A5A;
 	border-radius: 10px;
 	padding: 20px;
+	display: block;
 }
 
 .form {}
@@ -57,6 +58,22 @@
 	background-color: #fff;
 	border-radius: 15px;
 	padding: 8.5px 15px;
+}
+
+@media(max-width: 530px) {
+	.form form {
+		gap: 25px;
+	}
+	.form__input {
+		width: 100%;
+		font-size: 14px;
+	}
+	.form__title {
+		font-size: 26px;
+	}
+	.main__form {
+		width: 100%;
+	}
 }
 
 .form__input:focus {
@@ -96,4 +113,10 @@
 .footer__logo {
 	width: 75px;
 	height: 75px;
+}
+
+@media(max-width: 530px) {
+	.footer {
+		padding: 15px;
+	}
 }

@@ -48,6 +48,18 @@ button {
 	justify-content: space-between;
 }
 
+@media (max-width: 570px) {
+	.aside__container {
+		width: 60px;
+	}
+	.aside__body {
+		width: 60px;
+	}
+	.wrapper {
+		grid-template-columns: 60px auto;
+	}
+}
+
 .aside__button {
 	height: 32px;
 	width: 46px;
@@ -208,6 +220,12 @@ button {
 
 .main__container {
 	padding: 0px 15px;
+}
+
+@media (min-width: 768px) {
+	.main__container{
+		width:100%;
+	}
 }
 
 .main__posts {

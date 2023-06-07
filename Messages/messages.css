@@ -222,6 +222,21 @@ a {
 	border-radius: 3px;
 }
 
+@media (max-width: 700px) {
+	.aside__container {
+		width: 60px;
+	}
+	.aside__body {
+		width: 60px;
+	}
+	.wrapper {
+		grid-template-columns: 60px auto;
+	}
+	.main{
+		padding: 0px 10px;
+	}
+}
+
 .message {}
 
 .message__image {
@@ -273,3 +288,19 @@ a {
 	font-size: 14px;
 	line-height: 17px;
 }
+
+@media screen and (max-width: 767px) {
+	.menu__input {
+	  display: block;
+	}
+	.aside__body {
+		width: 60px;
+	}
+	.wrapper {
+		grid-template-columns: 60px auto;
+	}
+	.main__message{
+		padding: 30px;
+	}
+}
+ 

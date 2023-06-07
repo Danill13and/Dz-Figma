@@ -102,6 +102,34 @@ button {
 	gap: 50px;
 }
 
+@media (max-width: 700px) {
+	.aside__container {
+		width: 60px;
+	}
+	.aside__body {
+		width: 60px;
+	}
+	.wrapper {
+		grid-template-columns: 60px auto;
+	}
+	.create_post_box{
+		width: 100%;
+		padding: 0px 10px;
+		flex-direction: column;
+		align-items: center;
+	}
+	.create_post{
+		width: 100%;
+	}
+	.create_post_box img{
+		width: 350px;
+		height: 350px;
+	}
+	.create_post_element{
+		margin-top: 46px;
+	}
+}
+
 .menu {}
 
 .menu__link {
@@ -212,7 +240,7 @@ h1{
 .create_post_box{
 	display: flex;
 	justify-content: center;
-	gap: 120px;
+	gap: 20%;
 }
 .create_post_element{
 	display: flex;
@@ -230,3 +258,6 @@ button{
 	border-radius: 20px;
 	width: 139px;
 }
+ 
+
+

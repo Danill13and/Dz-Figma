@@ -48,6 +48,18 @@ button {
 	justify-content: space-between;
 }
 
+@media (max-width: 570px) {
+	.aside__container {
+		width: 60px;
+	}
+	.aside__body {
+		width: 60px;
+	}
+	.wrapper {
+		grid-template-columns: 60px auto;
+	}
+}
+
 .aside__button {
 	height: 32px;
 	width: 46px;
@@ -208,6 +220,17 @@ button {
 	gap: 20px;
 }
 
+@media (max-width: 720px) {
+	.profile_elements{
+		width: 100%;
+		flex-direction: column;
+	}
+	.profile_elements img{
+		width: 150px;
+		height: 150px;
+	}
+}
+
 .profile_box{
 	width: 100%;
 	padding: 15px 30px;
@@ -216,14 +239,22 @@ button {
 .profile_element {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	margin-bottom: 30px;
 }
+
 
 .profile_element button{
 	width: 204;
 	height: 44;
 	background-color:rgb(240, 233, 251);
 	border-radius: 20px;
+}
+
+@media (max-width: 720px){
+	.profile_element{
+		width: 100%;
+	}
 }
 
 .post_box{
@@ -236,12 +267,28 @@ button {
 	padding: 0px 15px;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	gap: 200px;
+}
+
+@media (max-width: 900px){
+	.post_element{
+		width: 100%;
+		gap: 97px;
+	}
 }
 
 .post_box_element{
 	display: grid;
 	grid-template-columns: 236px 236px 236px;
 	justify-content: center;
+	margin: 0 auto;
+	padding: 0px 10px;
 	gap: 40px;
+}
+
+@media (max-width: 900px) {
+	.post_box_element {
+		grid-template-columns: repeat(auto-fit, 236px);
+	}
 }
